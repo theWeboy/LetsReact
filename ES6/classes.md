@@ -39,3 +39,12 @@ person.printGender();
 We must call the `super` constructor (constructor of the super class) inside the
 constructor of the derived class to initialize the super/parent class. Omitting this will
 result in a `ReferenceError` .
+
+## Modern approach for defining properties and methods
+We can use the following direct syntax for defining variables and functions inside a class.
+Arrow functions are used as there is no `this` binding and syntax is shorter. Also we don't
+have to use the constructor.
+```
+myProperty = 'value'
+mymethod = () => {...}
+```

@@ -29,7 +29,7 @@ Also it is a convention to start the component file name with capital first lett
 
 ## Creating a functional Component
 
-```javascript
+```
 import React from 'react';
 
 const person = () => {

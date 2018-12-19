@@ -33,3 +33,5 @@ class App extends Component{
 
 }
 ```
+
+**NOTE:** In the above code, for Person with name "Raghav" the inline text (My hobbies...) of the component will not be displayed. To display this content we have to use `props.children` property in the component file.

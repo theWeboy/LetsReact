@@ -27,3 +27,10 @@ of the component in some manner then *it will lead to unusual behavior and bad a
 - So, the above is a bad practice to manipulate arrays and objects, instead we should always create a copy of the original array by using 
 the `slice` method or the ES6 *spread operator* and then mutate the state by passing the new array.
 - This is called *updating the state **immutably***. We should first manipulate the copy and then use `setState` on the mutated copy. 
+
+#### `key` property
+- In react it is important that a list/array has a `key` property for each of the array elements. 
+- The key property should hold a unique value, a value that uniquely identifies the array element like an `id` or and `index`. 
+- React maintains a virtual DOM which it uses to compare with the actual DOM for changes and for efficient rendering.
+- This is beacuse this helps react to identifiy the changes which are made to the DOM through the `key` of the element and compare the changes to the older version and render the updated DOM. 
+- This makes the app highly efficient and it is best practice to always have the `key` property for each array element.
